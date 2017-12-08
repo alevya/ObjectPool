@@ -10,7 +10,12 @@ namespace TestMain
     {
         static void Main(string[] args)
         {
+            var connPool = new ConnectionPool();
+            var conn = connPool.CheckOut();
 
+            Console.ReadLine();
+
+            connPool.CheckIn(conn);
         }
     }
 }

@@ -56,14 +56,17 @@ namespace ObjectPool
             }
 
             t = _create();
-            _locked.Add(t, now);
+            if(t != null)
+                _locked.Add(t, now);
 
             return t;
         }
 
         public void CheckIn(T t)
         {
-            
+            if(t == null) return;
+            _locked.Remove(t);
+            _unlocked.Add(t, DateTime.Now.Millisecond);
         }
 
     }
