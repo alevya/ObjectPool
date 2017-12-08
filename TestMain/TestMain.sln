@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMain", "TestMain\TestMain.csproj", "{C7F9A1FF-AF9E-49CA-9370-729BDB90ACBD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2206FF7-6C0E-48F0-B2F6-E45B13F9F42C} = {C2206FF7-6C0E-48F0-B2F6-E45B13F9F42C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPool", "ObjectPool\ObjectPool.csproj", "{C2206FF7-6C0E-48F0-B2F6-E45B13F9F42C}"
 EndProject
